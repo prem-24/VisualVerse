@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VisualVerse</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- google icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <!-- ********************** nav start **********************-->
+    <nav>
+      <div class="container">
+        <h2 class="logo">VisualVerse</h2>
+
+        <div class="search-Bar">
+          <span class="material-symbols-outlined"> search </span>
+          <input
+            class="input"
+            type="search "
+            placeholder="search for creaters,inspirations"
+          />
+        </div>
+
+        <div class="create">
+          <label class="btn btn-primary" for="create-post">create</label>
+          <!-- </div> -->
+          <div class="profile-pic">
+            <img src="photos/profile-1.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ********************** nav end **********************-->
+
+    <!-- ********************** main page start **********************-->
+
+    <main>
+      <div class="container">
+        <!-- ********************** left page start **********************-->
+        <!-- profile start -->
+        <div class="left">
+          <div class="photo">
+            <div class="profile-pic-1">
+              <img src="photos/profile-1.jpg" alt="" />
+            </div>
+            <div class="handle">
+              <h3>prem kumar</h3>
+              <p class="text-muted">@prem</p>
+            </div>
+          </div>
+          <div class="side-bar">
+            <a class="menu-item active" href="#">
+              <span>
+                <i class="fa-regular fa-user"></i>
+              </span>
+              <h3>Home</h3>
+            </a>
+
+            <a class="menu-item" href="#">
+              <span>
+                <i class="fa-regular fa-user"></i>
+              </span>
+              <h3>Explorer</h3>
+            </a>
+            <a class="menu-item" id="notifications-count" href="#">
+              <span>
+                <i class="fa-regular fa-user"></i>
+                <small class="notification-counts">+10</small>
+              </span>
+              <h3>Notifications</h3>
+
+              <div class="notification-popUp">
+                <div>
+                  <div class="profile-pic">
+                    <img src="photos/profile-10.jpg" alt="" />
+                  </div>
+                  <div class="notification-body">
+                    <b>keke benge </b>accept your friend request.
+                    <small class="text-muted">towdays ago</small>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="profile-pic">
+                    <img src="photos/profile-10.jpg" alt="" />
+                  </div>
+                  <div class="notification-body">
+                    <b>keke benge </b>accept your friend request.
+                    <small class="text-muted">towdays ago</small>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="profile-pic">
+                    <img src="photos/profile-1.jpg" alt="" />
+                  </div>
+                  <div class="notification-body">
+                    <b>keke benge </b>accept your friend request.
+                    <small class="text-muted">towdays ago</small>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="profile-pic">
+                    <img src="photos/profile-2.jpg" alt="" />
+                  </div>
+                  <div class="notification-body">
+                    <b>keke benge </b>accept your friend request.
+                    <small class="text-muted">towdays ago</small>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="profile-pic">
+                    <img src="photos/profile-2.jpg" alt="" />
+                  </div>
+                  <div class="notification-body">
+                    <b>keke benge </b>accept your friend request.
+                    <small class="text-muted">towdays ago</small>
+                  </div>
+                </div>
+                <div>
+                  <div class="profile-pic">
+                    <img src="photos/profile-2.jpg" alt="" />
+                  </div>
+                  <div class="notification-body">
+                    <b>keke benge </b>accept your friend request.
+                    <small class="text-muted">towdays ago</small>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+            <a class="menu-item" id="message-notification" href="#">
+              <span>
+                <i class="fa-regular fa-user"></i>
+                <small class="notification-counts">9</small>
+              </span>
+              <h3>Message</h3>
+            </a>
+
+            <a class="menu-item" href="#">
+              <span>
+                <i class="fa-regular fa-user"></i>
+              </span>
+              <h3>Bookmarks</h3>
+            </a>
+
+            <a class="menu-item" href="#">
+              <span>
+                <i class="fa-regular fa-user"></i>
+              </span>
+              <h3>Analylicts</h3>
+            </a>
+
+            <a class="menu-item" href="#">
+              <span>
+                <i class="fa-regular fa-user"></i>
+              </span>
+              <h3>Theme</h3>
+            </a>
+
+            <a class="menu-item" href="#">
+              <span>
+                <i class="fa-regular fa-user"></i>
+              </span>
+              <h3>settings</h3>
+            </a>
+          </div>
+          <!-- Close the side-bar div here -->
+          <!-- profile end -->
+
+          <!-- side bar start -->
+
+          <label class="btn btn-primary" for="create-post">create</label>
+          <!-- side bar end -->
+        </div>
+
+        <!-- ********************** left part end **********************-->
+
+        <!-- ********************** middle part start **********************-->
+        <div class="middle">
+          <!-------------------- stories start------------------------->
+          <div class="stories">
+            <div class="story">
+              <div class="profile-pic">
+                <img src="photos/story-1.jpg" alt="" />
+              </div>
+              <p class="name">your status</p>
+            </div>
+
+            <div class="story">
+              <div class="profile-pic">
+                <img src="photos/story-2.jpg" alt="" />
+              </div>
+              <p class="name">your status</p>
+            </div>
+
+            <div class="story">
+              <div class="profile-pic">
+                <img src="photos/story-3.jpg" alt="" />
+              </div>
+              <p class="name">your status</p>
+            </div>
+
+            <div class="story">
+              <div class="profile-pic">
+                <img src="photos/story-4.jpg" alt="" />
+              </div>
+              <p class="name">your status</p>
+            </div>
+
+            <div class="story">
+              <div class="profile-pic">
+                <img src="photos/story-5.jpg" alt="" />
+              </div>
+              <p class="name">your status</p>
+            </div>
+
+            <div class="story">
+              <div class="profile-pic">
+                <img src="photos/story-6.jpg" alt="" />
+              </div>
+              <p class="name">your status</p>
+            </div>
+          </div>
+
+          <!-------------------- stories end------------------------->
+
+          <form class="create-post">
+            <div class="profile-pic">
+              <img src="photos/story-6.jpg" alt="" />
+            </div>
+            <input
+              type="text"
+              placeholder="what's on your mind?, prem"
+              id="create-post"
+            />
+            <input type="submit" value="posty" class="btn btn-primary" />
+          </form>
+
+          <!-- ---feeds part start -->
+
+          <div class="feeds">
+            <!-- !!!!!!!!!!!!feed-1!!!!!!!!!!!!! -->
+
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-pic">
+                    <img src="photos/profile-1.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <h3>prem kumar</h3>
+                    <small>pondycherry 15 MINUTES AGO</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <span class="material-symbols-outlined"> more_horiz </span>
+                </span>
+              </div>
+              <div class="photo">
+                <img src="photos/feed-1.jpg" alt="" width="100%" />
+              </div>
+
+              <div class="action-btn">
+                <div class="interaction-buttons">
+                  <span class="material-symbols-outlined"> favorite </span>
+                  <span class="material-symbols-outlined"> comment </span>
+                  <span class="material-symbols-outlined"> share </span>
+                </div>
+                <div class="bookmark">
+                  <span class="material-symbols-outlined"> bookmark </span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="photos/profile-1.jpg" alt="" /></span>
+                <span><img src="photos/profile-1.jpg" alt="" /></span>
+                <span><img src="photos/profile-1.jpg" alt="" /></span>
+
+                <p>liked by <b>premkumar </b> and <b>232,4 others</b></p>
+              </div>
+
+              <div class="captions">
+                <p>
+                  <b>Vidya </b>Lorem ipsum dolor sit, amet consectetur
+                  adipisicing <elit class="span">#lifestyle #natureLook</elit>
+                </p>
+                <div class="comments text-muted">
+                  view all 50 comments . . .
+                </div>
+              </div>
+            </div>
+
+            <!-- !!!!!!!!!!!!feed-2!!!!!!!!!!!!! -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-pic">
+                    <img src="photos/profile-1.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <h3>prem kumar</h3>
+                    <small>pondycherry 15 MINUTES AGO</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <span class="material-symbols-outlined"> more_horiz </span>
+                </span>
+              </div>
+              <div class="photo">
+                <img src="photos/feed-2.jpg" alt="" width="100%" />
+              </div>
+
+              <div class="action-btn">
+                <div class="interaction-buttons">
+                  <span class="material-symbols-outlined"> favorite </span>
+                  <span class="material-symbols-outlined"> comment </span>
+                  <span class="material-symbols-outlined"> share </span>
+                </div>
+                <div class="bookmark">
+                  <span class="material-symbols-outlined"> bookmark </span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="photos/profile-1.jpg" alt="" /></span>
+                <span><img src="photos/profile-1.jpg" alt="" /></span>
+                <span><img src="photos/profile-1.jpg" alt="" /></span>
+
+                <p>liked by <b>premkumar </b> and <b>232,4 others</b></p>
+              </div>
+
+              <div class="captions">
+                <p>
+                  <b>Vidya </b>Lorem ipsum dolor sit, amet consectetur
+                  adipisicing <elit class="span">#lifestyle #natureLook</elit>
+                </p>
+                <div class="comments text-muted">
+                  view all 50 comments . . .
+                </div>
+              </div>
+            </div>
+            <!-- !!!!!!!!!!!!feed-3!!!!!!!!!!!!! -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-pic">
+                    <img src="photos/profile-1.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <h3>prem kumar</h3>
+                    <small>pondycherry 15 MINUTES AGO</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <span class="material-symbols-outlined"> more_horiz </span>
+                </span>
+              </div>
+              <div class="photo">
+                <img src="photos/feed-3.jpg" alt="" width="100%" />
+              </div>
+
+              <div class="action-btn">
+                <div class="interaction-buttons">
+                  <span class="material-symbols-outlined"> favorite </span>
+                  <span class="material-symbols-outlined"> comment </span>
+                  <span class="material-symbols-outlined"> share </span>
+                </div>
+                <div class="bookmark">
+                  <span class="material-symbols-outlined"> bookmark </span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="photos/profile-1.jpg" alt="" /></span>
+                <span><img src="photos/profile-1.jpg" alt="" /></span>
+                <span><img src="photos/profile-1.jpg" alt="" /></span>
+
+                <p>liked by <b>premkumar </b> and <b>232,4 others</b></p>
+              </div>
+
+              <div class="captions">
+                <p>
+                  <b>Vidya </b>Lorem ipsum dolor sit, amet consectetur
+                  adipisicing <elit class="span">#lifestyle #natureLook</elit>
+                </p>
+                <div class="comments text-muted">
+                  view all 50 comments . . .
+                </div>
+              </div>
+            </div>
+            <!-- !!!!!!!!!!!!feed-4!!!!!!!!!!!!! -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-pic">
+                    <img src="photos/profile-1.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <h3>prem kumar</h3>
+                    <small>pondycherry 15 MINUTES AGO</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <span class="material-symbols-outlined"> more_horiz </span>
+                </span>
+              </div>
+              <div class="photo">
+                <img src="photos/feed-4.jpg" alt="" width="100%" />
+              </div>
+
+              <div class="action-btn">
+                <div class="interaction-buttons">
+                  <span class="material-symbols-outlined"> favorite </span>
+                  <span class="material-symbols-outlined"> comment </span>
+                  <span class="material-symbols-outlined"> share </span>
+                </div>
+                <div class="bookmark">
+                  <span class="material-symbols-outlined"> bookmark </span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="photos/profile-1.jpg" alt="" /></span>
+                <span><img src="photos/profile-1.jpg" alt="" /></span>
+                <span><img src="photos/profile-1.jpg" alt="" /></span>
+
+                <p>liked by <b>premkumar </b> and <b>232,4 others</b></p>
+              </div>
+
+              <div class="captions">
+                <p>
+                  <b>Vidya </b>Lorem ipsum dolor sit, amet consectetur
+                  adipisicing <elit class="span">#lifestyle #natureLook</elit>
+                </p>
+                <div class="comments text-muted">
+                  view all 50 comments . . .
+                </div>
+              </div>
+            </div>
+            <!-- !!!!!!!!!!!!feed-5!!!!!!!!!!!!! -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-pic">
+                    <img src="photos/profile-1.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <h3>prem kumar</h3>
+                    <small>pondycherry 15 MINUTES AGO</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <span class="material-symbols-outlined"> more_horiz </span>
+                </span>
+              </div>
+              <div class="photo">
+                <img src="photos/feed-5.jpg" alt="" width="100%" />
+              </div>
+
+              <div class="action-btn">
+                <div class="interaction-buttons">
+                  <span class="material-symbols-outlined"> favorite </span>
+                  <span class="material-symbols-outlined"> comment </span>
+                  <span class="material-symbols-outlined"> share </span>
+                </div>
+                <div class="bookmark">
+                  <span class="material-symbols-outlined"> bookmark </span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="photos/profile-1.jpg" alt="" /></span>
+                <span><img src="photos/profile-1.jpg" alt="" /></span>
+                <span><img src="photos/profile-1.jpg" alt="" /></span>
+
+                <p>liked by <b>premkumar </b> and <b>232,4 others</b></p>
+              </div>
+
+              <div class="captions">
+                <p>
+                  <b>Vidya </b>Lorem ipsum dolor sit, amet consectetur
+                  adipisicing <elit class="span">#lifestyle #natureLook</elit>
+                </p>
+                <div class="comments text-muted">
+                  view all 50 comments . . .
+                </div>
+              </div>
+            </div>
+            <!-- !!!!!!!!!!!!feed-6!!!!!!!!!!!!! -->
+            <div class="feed">
+              <div class="head">
+                <div class="user">
+                  <div class="profile-pic">
+                    <img src="photos/profile-1.jpg" alt="" />
+                  </div>
+                  <div class="info">
+                    <h3>prem kumar</h3>
+                    <small>pondycherry 15 MINUTES AGO</small>
+                  </div>
+                </div>
+                <span class="edit">
+                  <span class="material-symbols-outlined"> more_horiz </span>
+                </span>
+              </div>
+              <div class="photo">
+                <img src="photos/feed-6.jpg" alt="" width="100%" />
+              </div>
+
+              <div class="action-btn">
+                <div class="interaction-buttons">
+                  <span class="material-symbols-outlined"> favorite </span>
+                  <span class="material-symbols-outlined"> comment </span>
+                  <span class="material-symbols-outlined"> share </span>
+                </div>
+                <div class="bookmark">
+                  <span class="material-symbols-outlined"> bookmark </span>
+                </div>
+              </div>
+
+              <div class="liked-by">
+                <span><img src="photos/profile-1.jpg" alt="" /></span>
+                <span><img src="photos/profile-1.jpg" alt="" /></span>
+                <span><img src="photos/profile-1.jpg" alt="" /></span>
+
+                <p>liked by <b>premkumar </b> and <b>232,4 others</b></p>
+              </div>
+
+              <div class="captions">
+                <p>
+                  <b>Vidya </b>Lorem ipsum dolor sit, amet consectetur
+                  adipisicing <elit class="span">#lifestyle #natureLook</elit>
+                </p>
+                <div class="comments text-muted">
+                  view all 50 comments . . .
+                </div>
+              </div>
+            </div>
+            <!-- !!!!!!!!!!!!feed-7!!!!!!!!!!!!! -->
+          </div>
+        </div>
+        <!-- ********************** middle part end **********************-->
+
+        <!-- ********************** right part start **********************-->
+        <div class="right"></div>
+        <!-- ********************** right part end **********************-->
+      </div>
+    </main>
+    <!-- ********************** main page end **********************-->
+  </body>
+</html>

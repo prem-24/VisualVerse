@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --color-dark: hsl(252, 30%, 17%);
+  --color-light: hsl(252, 30%, 95%);
+  --color-gray: hsl(252, 15%, 65%);
+  --color-primary: hsl(252, 75%, 60%);
+  --color-secondary: hsl(252, 1000%, 95%);
+  --color-success: hsl(120, 95%, 65%);
+  --color-danger: hsl(0, 95%, 65%);
+  --color-dark: hsl(252, 30%, 17%);
+  --color-black: hsl(252, 30%, 10%);
+  --color-white: hsl(0, 0%, 100%);
+
+  --border-radius: 30px;
+  --card-border-radius: 25px;
+  --button-padding: 12px 45px;
+  --search-padding: 16px 20px;
+  --card-padding: 25px;
+  --button-border-radius: 25px;
+
+  --sticky-top-left: 80px;
+  --sticky-top-right: -288px;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  color: inherit;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  color: var(--color-dark);
+  background: var(--color-light);
+  overflow-x: hidden;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.profile-pic {
+  width: 55px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-pic > img {
+  width: 100%;
+  display: block;
+}
+
+.btn {
+  padding: var(--button-padding);
+  border-radius: var(--button-border-radius);
+  display: inline-block;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 300ms ease;
+  font-size: 0.8;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-primary {
+  background: var(--color-primary);
+  color: white;
+}
+
+.text-bold {
+  font-weight: 500;
+}
+
+/* navbar style start */
+
+nav {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  padding: 10px 0px;
+}
+
+nav .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .search-Bar {
+  background-color: var(--color-light);
+  border-radius: var(--border-radius);
+  padding: var(--search-padding);
+  display: flex;
+  align-items: center;
+}
+nav .search-Bar .material-symbols-outlined {
+  color: var(--color-gray);
+}
+
+.search-Bar .input {
+  background-color: transparent;
+  width: 30vw;
+  margin-left: 16px;
+  font-size: 16px;
+  color: var(--color-gray);
+}
+/* !!!!doubt   !!!!!!!!!! */
+.search-Bar.input::placeholder {
+  color: #999999; /* Change to your desired color */
+  font-size: 14px;
+}
+
+nav .create {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+/* ************** main section start ************** */
+
+main {
+  position: relative;
+  top: 80px;
+}
+
+main .container {
+  display: grid;
+  grid-template-columns: 18vw auto 20vw;
+  align-items: start;
+  column-gap: 2rem;
+}
+
+/* *** left part start *** */
+
+main .container > :first-child {
+  height: max-content;
+  position: sticky;
+  top: var(--sticky-top-left);
+}
+
+main .container > :first-child .photo {
+  background-color: aqua;
+  padding: var(--card-padding);
+  background: var(--color-white);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  column-gap: 20px;
+  border-radius: var(--card-border-radius);
+  margin-top: 16px;
+}
+
+main .container > :first-child .photo img {
+  width: 100%;
+}
+
+.profile-pic-1 {
+  width: 45px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+  /* font-size: 300px; */
+}
+
+main .left .side-bar {
+  margin-top: 16px;
+  background: var(--color-white);
+  border-radius: var(--card-border-radius);
+}
+
+main .left .side-bar .menu-item {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: all 300ms ease;
+}
+
+main .left .side-bar .menu-item:hover {
+  background: var(--color-light);
+}
+
+main .left .side-bar i {
+  width: 30px;
+  margin-left: 32px;
+  position: relative;
+  font-size: 20px;
+  /* font-weight: 300; */
+}
+
+main .left .side-bar .menu-item .notification-counts {
+  background-color: var(--color-danger);
+  color: var(--color-white);
+  font-size: 12px;
+  border-radius: 50px;
+  padding: 0.1rem 0.4rem;
+  width: fit-content;
+  position: absolute;
+  top: 3px;
+  left: 40px;
+}
+
+main .left .side-bar h3 {
+  /* background-color: aqua; */
+  margin-left: 1.5rem;
+  font-size: 1rem;
+}
+
+main .left .side-bar .active {
+  background-color: var(--color-light);
+}
+
+.left .side-bar .active i,
+.left .side-bar .active h3 {
+  color: var(--color-primary);
+}
+
+.left .side-bar .active::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 100%;
+  position: absolute;
+  background: var(--color-primary);
+  /* overflow: hidden; */
+}
+
+.left .side-bar .active:first-child {
+  border-top-left-radius: var(--card-border-radius);
+  overflow: hidden;
+}
+
+.left .side-bar .active:last-child {
+  border-bottom-left-radius: var(--card-border-radius);
+  overflow: hidden;
+}
+
+/* bootom btn */
+
+.left .btn {
+  margin-top: 16px;
+  width: 100%;
+  text-align: center;
+  padding: 16px 0;
+}
+
+/* !!!!!!notification style start!!!! */
+
+.left .notification-popUp {
+  background-color: black;
+  position: absolute;
+  left: 110%;
+  top: 0;
+  width: 480px;
+  background-color: var(--color-white);
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  box-shadow: 0 0 32px hsl(var(--color-primary));
+  display: none;
+}
+
+.left .notification-popUp::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  left: -10px !important;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.left .notification-popUp > div {
+  display: flex;
+  gap: 16px;
+  align-items: start;
+  margin-bottom: 16px;
+}
+
+/* !!!!!notification style end!!!!! */
+
+/* ************** middle section start ************** */
+
+/* -----------------stories styles start  ---------------- */
+.middle .stories {
+  display: flex;
+  justify-content: space-between;
+  height: 230px;
+  /* width: 100%; */
+  gap: 8px;
+}
+.middle .stories > .story {
+  background-color: black;
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 14px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.middle .stories > .story:nth-child(1) {
+  background: url(photos/story-1.jpg) no-repeat center/cover;
+}
+.middle .stories > .story:nth-child(2) {
+  background: url(photos/story-2.jpg) no-repeat center/cover;
+}
+.middle .stories > .story:nth-child(3) {
+  background: url(photos/story-3.jpg) no-repeat center/cover;
+}
+.middle .stories > .story:nth-child(4) {
+  background: url(photos/story-4.jpg) no-repeat center/cover;
+}
+.middle .stories > .story:nth-child(5) {
+  background: url(photos/story-5.jpg) no-repeat center/cover;
+}
+.middle .stories > .story:nth-child(6) {
+  background: url(photos/story-6.jpg) no-repeat center/cover;
+}
+
+.middle .stories > .story::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+}
+.middle .stories > .story > .name {
+  z-index: 2;
+}
+
+.middle .stories > .story > .profile-pic {
+  width: 45px;
+  height: 45px;
+  align-self: start;
+  border: 2px solid var(--color-primary);
+}
+
+/* -----------------stories styles start  ---------------- */
+.middle .create-post {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: white;
+  align-items: center;
+  margin-top: 16px;
+  padding: 8px var(--card-padding);
+  border-radius: var(--border-radius);
+}
+
+.middle .create-post #create-post {
+  width: 80%;
+  height: 30px;
+  justify-self: start;
+  padding-left: 16px;
+  color: var(--color-dark);
+  /* font-size: 14px; */
+}
+.middle .create-post #create-post::placeholder {
+  color: #000000 !important;
+  /* color: var(--color-light); */
+  font-size: 16px;
+  /* color: #999999;!!!!!!why not working */
+}
+.middle .create-post #create-post:focus {
+  border-color: #000000 !important; /* Change to your desired color */
+}
+
+/* -----------------create post start  ---------------- */
+
+.middle .feeds .feed {
+  background-color: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--card-border-radius);
+  font-size: 16px;
+  line-height: 20px;
+  margin: 16px 0;
+}
+
+.middle .feeds .feed .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.middle .feeds .feed .head .user {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.middle .feeds .feed .photo {
+  border-radius: var(--card-border-radius);
+  overflow: hidden;
+  margin: 12px 0;
+}
+
+.middle .feeds .feed .action-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px;
+}
+.middle .feeds .feed .action-btn .interaction-buttons {
+  width: 40%;
+}
+
+.middle .feeds .feed .action-btn .material-symbols-outlined {
+  /* background-color: #000000; */
+  color: var(--color-dark);
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.middle .feeds .feed .liked-by span {
+  display: block;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  border: 2px solid white;
+  margin-left: -10px;
+}
+.middle .feeds .feed .liked-by span img {
+  width: 100%;
+}
+.middle .feeds .feed .liked-by span:nth-child(1) {
+  margin: 0;
+}
+
+.middle .feeds .feed .liked-by {
+  display: flex;
+  align-items: center;
+}
+.middle .feeds .feed .liked-by p {
+  margin-left: 16px;
+}
+
+.middle .feeds .feed .captions .comments {
+  color: var(--color-gray);
+  margin-top: 5px;
+}
+/* -----------------create post end  ---------------- */
+
+/* ************** middle section start ************** */
