@@ -2,7 +2,7 @@
 
 :root {
   --color-dark: hsl(252, 30%, 17%);
-  --color-light: hsl(252, 30%, 95%);
+  --color-light: hsl(252, 9%, 96%);
   --color-gray: hsl(252, 12%, 60%);
   --color-primary: #73bff3;
   --color-secondary: #d3cfe6;
@@ -12,6 +12,11 @@
   --color-black: hsl(252, 30%, 10%);
   --color-white: hsl(0, 0%, 100%);
 
+  /* bg */
+  --color-bg-light: #efeef1;
+  --color-bg-dim: #3f4d61;
+  --color-bg-dark: #252f3d;
+  /* bg */
   --border-radius: 30px;
   --card-border-radius: 25px;
   --button-padding: 12px 45px;
@@ -86,7 +91,7 @@ body {
 /* navbar style start */
 
 nav {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--color-white);
   width: 100%;
   position: fixed;
   top: 0;
@@ -106,7 +111,7 @@ nav .container {
   padding: var(--search-padding);
   display: flex;
   align-items: center;
-  font-size: 14px;
+  /* font-size: 14px; */
 }
 .search-Bar :focus {
   outline: none;
@@ -122,7 +127,7 @@ nav .container {
   background-color: transparent;
   width: 30vw;
   margin-left: 16px;
-  font-size: 16px;
+  font-size: 14px;
   color: var(--color-gray);
 }
 
@@ -197,16 +202,15 @@ main .left .side-bar .menu-item:hover {
 }
 
 main .left .side-bar span > .material-symbols-outlined {
-  /* font-size: px; */
   font-weight: 500;
-
+  color: var(--color-gray);
   font-size: 24px;
   margin-left: 32px;
   position: relative;
 
   /* font-weight: 300; */
 }
-main .left .side-bar span > #active {
+main .left .side-bar span > .active {
   color: var(--color-primary);
 }
 
@@ -232,7 +236,7 @@ main .left .side-bar .active {
   background-color: var(--color-light);
 }
 
-.left .side-bar .active i,
+.left .side-bar .active span > .material-symbols-outlined,
 .left .side-bar .active h3 {
   color: var(--color-primary);
 }
@@ -244,7 +248,6 @@ main .left .side-bar .active {
   height: 100%;
   position: absolute;
   background: var(--color-primary);
-  /* overflow: hidden; */
 }
 
 .left .side-bar .active:first-child {
@@ -370,7 +373,7 @@ main .left .side-bar .active {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  background-color: white;
+  background-color: var(--color-white);
   align-items: center;
   margin-top: 16px;
   padding: 8px var(--card-padding);
@@ -383,6 +386,10 @@ main .left .side-bar .active {
   justify-self: start;
   padding-left: 16px;
   color: var(--color-gray);
+  background-color: var(--color-light);
+  border-radius: var(--border-radius);
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .middle .create-post #create-post::placeholder {
   color: var(--color-gray);
@@ -400,7 +407,7 @@ main .left .side-bar .active {
   background-color: var(--color-white);
   padding: var(--card-padding);
   border-radius: var(--card-border-radius);
-  font-size: 16px;
+  /* font-size: 16px; */
   line-height: 20px;
   margin: 16px 0;
 }
@@ -528,7 +535,7 @@ main .container .right .input {
   background-color: transparent;
   width: 30vw;
   margin-left: 16px;
-  font-size: 16px;
+  font-size: 14px;
   color: var(--color-gray);
 }
 
@@ -544,7 +551,6 @@ main .right .messages .category .message-request {
 main .right .messages .category h5 {
   width: 100%;
   border-bottom: 4px solid var(--color-light);
-  font-size: 14px;
   font-weight: 600;
   padding-bottom: 15px;
   color: var(--color-dark);
@@ -564,7 +570,7 @@ main .right .messages .message .message-body {
   margin-left: 10px;
 }
 main .right .messages .message .message-body p {
-  font-size: 14px;
+  font-size: 0.8rem;
 }
 
 .text-muted {
@@ -602,7 +608,6 @@ main .right .friend-request .request {
   padding: var(--card-padding);
   border-radius: var(--card-border-radius);
   background-color: var(--color-white);
-  /* margin-bottom: 10px; */
 }
 
 main .right .friend-request .request .info {
@@ -611,7 +616,10 @@ main .right .friend-request .request .info {
   gap: 16px;
   margin-bottom: 10px;
 }
-
+main .right .friend-request .request .info p {
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
 main .right .friend-request .request .action {
   display: flex;
   gap: 16px;
@@ -649,7 +657,7 @@ main .right .friend-request .request .action {
 /* font custome style //////////////////*/
 
 .customize-theme .card .font-size {
-  margin-top: 80px;
+  margin-top: 20px;
 }
 
 .customize-theme .card .font-size > div {
@@ -663,7 +671,7 @@ main .right .friend-request .request .action {
 }
 
 .customize-theme .card .font-size .choose-size {
-  background-color: #d3cfe6;
+  background-color: var(--color-secondary);
   height: 4px;
   width: 100%;
   margin: 0 16px;
@@ -754,8 +762,8 @@ main .right .friend-request .request .action {
 }
 
 .customize-theme .card .bg-color-customisze .choose-bg .bg-1 {
-  background-color: var(--color-white);
-  color: black;
+  background-color: white;
+  color: var(--color-gray);
 }
 
 .customize-theme .card .bg-color-customisze .choose-bg .bg-2 {
@@ -803,6 +811,10 @@ main .right .friend-request .request .action {
   .left .btn {
     display: none;
   }
+  .customize-theme .card {
+    background-color: #ffffff;
+    width: 90vw;
+  }
 }
 
 /* !!!!!!!!!!media query for small devices */
@@ -824,8 +836,13 @@ main .right .friend-request .request .action {
   .left .notification-popUp::before {
     position: absolute;
     top: 1.3rem;
-    left: calc(20rem - 0.6rem);
-    display: block;
+    background-color: #ffffff;
+    left: calc(320px - 10px) !important;
+  }
+  .left .notification-popUp {
+    position: absolute;
+    left: -22rem;
+    width: 20rem;
   }
 
   .left {
@@ -838,4 +855,26 @@ main .right .friend-request .request .action {
   main .container .right {
     display: none;
   }
+  .customize-theme .card {
+    background-color: #ffffff;
+    width: 80vw;
+  }
+  .customize-theme {
+    width: 100%;
+    height: 100%;
+  }
+  .customize-theme .card .bg-color-customisze .choose-bg {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .customize-theme .card {
+    background-color: #ffffff;
+    width: 90%;
+  }
+}
+
+.customize-theme .card h2 {
+  padding: 0 0 10px 0;
 }
